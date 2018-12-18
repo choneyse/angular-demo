@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class OtherShowsComponent implements OnInit {
   constructor() {}
-  @Input() show;
+  @Input() shows;
 
   ngOnInit() {}
 }
