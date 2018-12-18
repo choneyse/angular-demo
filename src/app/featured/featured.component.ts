@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { shows } from '../shows';
 
 @Component({
   selector: 'featured',
@@ -7,6 +8,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FatFeaturedComponent implements OnInit {
   constructor() {}
-
+  @Input() show = shows;
   ngOnInit() {}
 }

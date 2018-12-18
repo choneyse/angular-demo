@@ -1,18 +1,12 @@
 <section class="featured">
   <div class="left">
-    <h2>Beyond the Rainbow</h2>
-    <h3>The Judy Garland Musical</h3>
-    <p class="description">Adored by millions, Judy Garland wowed us from the time she was a teenager in pigtails
-      singing “Over the Rainbow,” to her legendary 1961 come-back Carnegie Hall concert in what The New York Times
-      called, “the concert of the century.” Set both on the stage of Carnegie Hall and in Garland’s mind, <b><i>Beyond
-          the
-          Rainbow</i></b> simultaneously treats its audience to the famed concert while telling the life story of one
-      of
-      Hollywood’s most unforgettable legends.</p>
+    <h2>{{ show.title }}</h2>
+    <h3>{{ show.titleSecond }}</h3>
+    <p class="description" [innerHTML]="show.description"></p>
     <date></date>
     <fat-button buttonText='bubu' buttonHref="//www.google.com"></fat-button>
   </div>
   <div class="right">
-    <img class="poster" src="assets/BeyondTheRainbow_POSTER.jpg" />
+    <img class="poster" src="{{ show.poster }}" />
   </div>
 </section>
