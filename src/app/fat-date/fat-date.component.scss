@@ -32,23 +32,23 @@
   position: relative;
 
   .month {
-      display: inline-block;
-      transform: rotate(-90deg);
-      letter-spacing: 5px;
-      flex: 0;
-      background-color: var(--dk-green);
-      color: #fff;
-      padding: 2px 4px 2px 6px;
-      position: absolute;
-      left: -40px;
-      top: 25px;
+    display: inline-block;
+    transform: rotate(-90deg);
+    letter-spacing: 5px;
+    flex: 0;
+    background-color: var(--dk-green);
+    color: #fff;
+    padding: 2px 4px 2px 6px;
+    position: absolute;
+    left: -40px;
+    top: 25px;
   }
 
   .date {
-      font-weight: bold;
-      font-size: 52px;
-      color: var(--dk-green);
-      font-family: var(--header-type);
+    font-weight: bold;
+    font-size: 52px;
+    color: var(--dk-green);
+    font-family: var(--header-type);
   }
 }
 
