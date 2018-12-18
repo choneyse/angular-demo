@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FatHeaderComponent } from './fat-header.component';
+import { FatHeaderComponent } from './header.component';
 
 describe('FatHeaderComponent', () => {
   let component: FatHeaderComponent;
@@ -8,9 +8,8 @@ describe('FatHeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FatHeaderComponent ]
-    })
-    .compileComponents();
+      declarations: [FatHeaderComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

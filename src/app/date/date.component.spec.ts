@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FatDateComponent } from './fat-date.component';
+import { FatDateComponent } from './date.component';
 
 describe('FatDateComponent', () => {
   let component: FatDateComponent;
@@ -8,9 +8,8 @@ describe('FatDateComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FatDateComponent ]
-    })
-    .compileComponents();
+      declarations: [FatDateComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FatFeaturedComponent } from './fat-featured.component';
+import { FatFeaturedComponent } from './featured.component';
 
 describe('FatFeaturedComponent', () => {
   let component: FatFeaturedComponent;
@@ -8,9 +8,8 @@ describe('FatFeaturedComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FatFeaturedComponent ]
-    })
-    .compileComponents();
+      declarations: [FatFeaturedComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

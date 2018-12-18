@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FatSubHeaderComponent } from './fat-sub-header.component';
+import { FatSubHeaderComponent } from './sub-header.component';
 
 describe('FatSubHeaderComponent', () => {
   let component: FatSubHeaderComponent;
@@ -8,9 +8,8 @@ describe('FatSubHeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FatSubHeaderComponent ]
-    })
-    .compileComponents();
+      declarations: [FatSubHeaderComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
