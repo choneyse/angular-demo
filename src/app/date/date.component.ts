@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'date',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FatDateComponent implements OnInit {
   constructor() {}
+
+  @Input() startDate: number;
+  @Input() endDate: number;
 
   ngOnInit() {}
 }

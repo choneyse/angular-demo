@@ -3,7 +3,7 @@
     <h2>{{ show.title }}</h2>
     <h3>{{ show.titleSecond }}</h3>
     <p class="description" [innerHTML]="show.description"></p>
-    <date></date>
+    <date [startDate]="show.startDate" [endDate]="show.endDate"></date>
     <fat-button buttonText='bubu' buttonHref="//www.google.com"></fat-button>
   </div>
   <div class="right">
