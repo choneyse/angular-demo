@@ -1,0 +1,31 @@
+:root {
+  --dk-green: #61892F;
+  --lt-green: #86C232;
+  --dk-gray: #222629;
+  --gray: #474B4f;
+  --lt-gray: #6B6E70;
+  --white: #ffffff;
+
+  --header-color: $dk-gray;
+  --body-color: $lt-gray;
+
+  --header-type: Montserrat, sans-serif;
+  --body-type: Varela, sans-serif;
+
+  --drop-shadow: 5px 10px 24px $lt-gray;
+}
+
+$dk-green: #61892F;
+$lt-green: #86C232;
+$dk-gray: #222629;
+$gray: #474B4f;
+$lt-gray: #6B6E70;
+$white: #ffffff;
+
+$header-color: $dk-gray;
+$body-color: $lt-gray;
+
+$header-type: Montserrat, sans-serif;
+$body-type: Varela, sans-serif;
+
+$drop-shadow: 5px 10px 24px $lt-gray;
