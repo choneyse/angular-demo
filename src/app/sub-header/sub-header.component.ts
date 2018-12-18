@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'fat-sub-header',
@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fat-sub-header.component.scss']
 })
 export class FatSubHeaderComponent implements OnInit {
-  constructor() {}
-
+  @Input() sectionTitle;
   ngOnInit() {}
 }
