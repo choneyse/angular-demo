@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'fat-featured',
-  templateUrl: './fat-featured.component.html',
-  styleUrls: ['./fat-featured.component.scss']
+  selector: 'featured',
+  templateUrl: './featured.component.html',
+  styleUrls: ['./featured.component.scss']
 })
 export class FatFeaturedComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
