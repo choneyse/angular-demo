@@ -1,0 +1,15 @@
+.section-title {
+  text-align: center;
+  padding: 48px 0;
+
+  h2 {
+    padding: 20px;
+    font-family: var(--body-type);
+    letter-spacing: 10px;
+    border-top: 2px solid var(--dk-gray);
+    margin: 0 auto;
+    display: inline;
+    font-size: 10px;
+    text-align: center;
+  }
+}
