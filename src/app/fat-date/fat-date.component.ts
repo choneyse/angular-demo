@@ -5,6 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './fat-date.component.html',
   styleUrls: ['./fat-date.component.scss']
 })
+
+
 export class FatDateComponent implements OnInit {
 
   constructor() { }
