@@ -8,5 +8,5 @@ import { shows } from './shows';
 })
 export class AppComponent {
   title = 'fat-angular';
-  shows;
+  shows = shows;
 }

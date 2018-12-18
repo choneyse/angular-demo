@@ -8,6 +8,6 @@ import { shows } from '../shows';
 })
 export class FatFeaturedComponent implements OnInit {
   constructor() {}
-  @Input() show = shows;
+  @Input() show;
   ngOnInit() {}
 }

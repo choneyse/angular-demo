@@ -1,0 +1,34 @@
+.show {
+  padding: 24px;
+  flex: 1;
+  border-right: 1px solid var(--dk-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: var(--lt-green);
+    cursor: pointer;
+
+    img {
+      opacity: 1;
+    }
+  }
+
+  &:last-child {
+    border: none;
+  }
+
+  img {
+    max-width: 200px;
+    max-height: 200px;
+    opacity: .25;
+    transition: max-height 0.5s linear;
+    transition: max-width 0.5s linear;
+
+    &:hover {
+      max-height: 300px;
+      max-width: 300px;
+    }
+  }
+}

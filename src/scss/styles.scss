@@ -1,6 +1,9 @@
 @import "./variables";
 @import './typography';
+@import './other-shows-wrapper';
 
 body {
   padding-top: 80px;
+  max-width: 1600px;
+  margin: 0 auto;
 }

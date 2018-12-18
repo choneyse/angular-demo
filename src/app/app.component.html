@@ -1,4 +1,7 @@
 <fat-header></fat-header>
 <sub-header sectionTitle="Now Playing"></sub-header>
-<featured></featured>
+<featured [show]=shows[1]></featured>
 <sub-header sectionTitle="Other Shows"></sub-header>
+<div class="other-shows-wrapper">
+  <other-shows *ngFor="let show of shows" [show]="show"></other-shows>
+</div>
