@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { shows } from '../shows';
+
+import { ShowsService } from '../shows.service';
 
 @Component({
   selector: 'featured',
@@ -7,7 +8,9 @@ import { shows } from '../shows';
   styleUrls: ['./featured.component.scss']
 })
 export class FatFeaturedComponent implements OnInit {
-  constructor() {}
+  constructor(private showsService: ShowsService) {}
   @Input() show;
-  ngOnInit() {}
+  ngOnInit() {
+    this.show = this.showsService.getShow(0);
+  }
 }
