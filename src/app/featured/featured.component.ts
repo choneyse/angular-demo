@@ -4,7 +4,6 @@ import { ActivatedRoute } from '@angular/router';
 import { ShowsService } from '../shows.service';
 
 const getShowId = titleFromUrl => {
-  console.log('titleFromUrl', titleFromUrl);
   switch (titleFromUrl) {
     case 'beyond-the-rainbow':
       return 0;
@@ -28,7 +27,6 @@ export class FeaturedComponent implements OnInit {
       if (!params['show']) {
         this.show = this.showsService.getShow(0);
       } else {
-        console.log('id:', getShowId(params['show']));
         const showId = getShowId(params['show']);
         this.show = this.showsService.getShow(showId);
       }
