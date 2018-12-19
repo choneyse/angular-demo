@@ -2,24 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { FatFeaturedComponent } from './featured/featured.component';
-import { FatDateComponent } from './date/date.component';
-import { FatHeaderComponent } from './header/header.component';
-import { FatSubHeaderComponent } from './sub-header/sub-header.component';
+import { FeaturedComponent } from './featured/featured.component';
+import { DateComponent } from './date/date.component';
+import { HeaderComponent } from './header/header.component';
+import { SubHeaderComponent } from './sub-header/sub-header.component';
 import { ButtonComponent } from './button/button.component';
 import { OtherShowsComponent } from './other-shows/other-shows.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FatFeaturedComponent,
-    FatDateComponent,
-    FatHeaderComponent,
-    FatSubHeaderComponent,
+    FeaturedComponent,
+    DateComponent,
+    HeaderComponent,
+    SubHeaderComponent,
     ButtonComponent,
     OtherShowsComponent
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, routing],
   providers: [],
   bootstrap: [AppComponent]
 })

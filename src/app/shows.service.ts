@@ -21,7 +21,8 @@ export class ShowsService {
       startDate: '2018-9-28',
       endDate: '2018-10-14',
       poster: 'assets/BeyondTheRainbow_POSTER.jpg',
-      logo: 'assets/BeyondTheRainbow_ShowLogo.png'
+      logo: 'assets/BeyondTheRainbow_ShowLogo.png',
+      url: '/beyond-the-rainbow'
     },
     {
       title: "A Doll's House, Part 2",
@@ -31,7 +32,8 @@ export class ShowsService {
       startDate: '2018-11-2',
       endDate: '2018-11-18',
       poster: 'assets/ADollsHouse_POSTER.jpg',
-      logo: 'assets/ADollsHouse-Part2_Logo.png'
+      logo: 'assets/ADollsHouse-Part2_Logo.png',
+      url: '/a-dolls-house-part-2'
     },
     {
       title: 'Marvelous Wonderettes:',
@@ -41,7 +43,8 @@ export class ShowsService {
       startDate: '2018-12-7',
       endDate: '2019-1-6',
       poster: 'assets/Wonderettes_POSTER.jpg',
-      logo: 'assets/Wonderettes-DreamOn_Logo.png'
+      logo: 'assets/Wonderettes-DreamOn_Logo.png',
+      url: 'marvelous-wonderettes-dream-on'
     }
   ];
 }

@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FatFeaturedComponent } from './featured.component';
+import { FeaturedComponent } from './featured.component';
 
 describe('FatFeaturedComponent', () => {
-  let component: FatFeaturedComponent;
-  let fixture: ComponentFixture<FatFeaturedComponent>;
+  let component: FeaturedComponent;
+  let fixture: ComponentFixture<FeaturedComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [FatFeaturedComponent]
+      declarations: [FeaturedComponent]
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FatFeaturedComponent);
+    fixture = TestBed.createComponent(FeaturedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

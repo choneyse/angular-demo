@@ -5,7 +5,7 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './sub-header.component.html',
   styleUrls: ['./sub-header.component.scss']
 })
-export class FatSubHeaderComponent implements OnInit {
+export class SubHeaderComponent implements OnInit {
   @Input() sectionTitle;
   ngOnInit() {}
 }

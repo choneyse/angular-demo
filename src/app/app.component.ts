@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { shows } from './shows';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +7,4 @@ import { shows } from './shows';
 })
 export class AppComponent {
   title = 'fat-angular';
-  shows = shows;
 }

@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class FatHeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}

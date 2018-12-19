@@ -5,7 +5,7 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './date.component.html',
   styleUrls: ['./date.component.scss']
 })
-export class FatDateComponent implements OnInit {
+export class DateComponent implements OnInit {
   constructor() {}
 
   @Input() startDate: number;
