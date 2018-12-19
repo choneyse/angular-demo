@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FatSubHeaderComponent } from './sub-header.component';
+import { SubHeaderComponent } from './sub-header.component';
 
 describe('FatSubHeaderComponent', () => {
-  let component: FatSubHeaderComponent;
-  let fixture: ComponentFixture<FatSubHeaderComponent>;
+  let component: SubHeaderComponent;
+  let fixture: ComponentFixture<SubHeaderComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [FatSubHeaderComponent]
+      declarations: [SubHeaderComponent]
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FatSubHeaderComponent);
+    fixture = TestBed.createComponent(SubHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

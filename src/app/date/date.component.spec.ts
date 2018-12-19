@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FatDateComponent } from './date.component';
+import { DateComponent } from './date.component';
 
 describe('FatDateComponent', () => {
-  let component: FatDateComponent;
-  let fixture: ComponentFixture<FatDateComponent>;
+  let component: DateComponent;
+  let fixture: ComponentFixture<DateComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [FatDateComponent]
+      declarations: [DateComponent]
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FatDateComponent);
+    fixture = TestBed.createComponent(DateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
