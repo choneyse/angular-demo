@@ -3,15 +3,15 @@
   <div class="date">
     <div class="date-block-wrapper">
       <div class="date-block start">
-        <span class="month">{{startDate | date: 'LLL'}}</span>
-        <span class="date">{{ startDate | date: 'd'}}</span>
+        <span class="month">{{ startDate | date: 'LLL'}}</span>
+        <span class="date">{{ startDate | date: 'd' }}</span>
       </div>
     </div>
     <div class="through">through</div>
     <div class="date-block-wrapper">
       <div class="date-block end">
-        <span class="month">OCT</span>
-        <span class="date">14</span>
+        <span class="month">{{ endDate | date: 'LLL' }}</span>
+        <span class="date">{{ endDate | date: 'd' }}</span>
       </div>
     </div>
   </div>
