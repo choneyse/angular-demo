@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { fadeAnimation } from './animations';
+import { fadeAnimation, fromLeft } from './animations/animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [fadeAnimation]
+  animations: [fromLeft]
 })
 export class AppComponent {
   title = 'fat-angular';

@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 import { ShowsService } from '../../shows.service';
-import { fadeAnimation } from 'src/app/animations';
 
 @Component({
   selector: 'beyond-the-rainbow',

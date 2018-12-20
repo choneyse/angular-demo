@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { ShowsService } from '../shows.service';
-import { fadeAnimation } from '../animations';
+import { fromLeft, fromRight } from '../animations/animations';
 
 const getShowId = titleFromUrl => {
   switch (titleFromUrl) {
@@ -18,7 +18,8 @@ const getShowId = titleFromUrl => {
 @Component({
   selector: 'featured',
   templateUrl: './featured.component.html',
-  styleUrls: ['./featured.component.scss']
+  styleUrls: ['./featured.component.scss'],
+  animations: [fromLeft, fromRight]
 })
 export class FeaturedComponent implements OnInit {
   constructor(private showsService: ShowsService, private activatedRoute: ActivatedRoute) {

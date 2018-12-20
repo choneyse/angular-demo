@@ -21,3 +21,17 @@ export const fadeAnimation = trigger('fadeAnimation', [
     })
   ])
 ]);
+
+export const fromLeft = trigger('fromLeft', [
+  transition(':enter', [style({ transform: 'translateX(-100%', opacity: 0 }), animate('1s')]),
+  transition(':leave', [animate('1s', style({ transform: 'translateX(100%)' }))])
+]);
+
+export const fromRight = trigger('fromRight', [
+  transition(':enter', [style({ transform: 'translateX(100%', opacity: 0 }), animate('1s')]),
+  transition(':leave', [animate('1s', style({ transform: 'translateX(-100%)' }))])
+]);
+
+// export const showChange = trigger('showChange', [
+//   transition(':enter')
+// ])
