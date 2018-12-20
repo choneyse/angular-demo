@@ -18,8 +18,7 @@ const getShowId = titleFromUrl => {
 @Component({
   selector: 'featured',
   templateUrl: './featured.component.html',
-  styleUrls: ['./featured.component.scss'],
-  animations: [fadeAnimation]
+  styleUrls: ['./featured.component.scss']
 })
 export class FeaturedComponent implements OnInit {
   constructor(private showsService: ShowsService, private activatedRoute: ActivatedRoute) {
