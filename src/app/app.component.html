@@ -1,9 +1,9 @@
 <fat-header></fat-header>
 <sub-header sectionTitle="Featured"></sub-header>
 <!-- Featured Component -->
-<!-- <div [@flyLeft]="o.isActivated ? o.activatedRoute : ''"> -->
-<router-outlet #o="outlet"></router-outlet>
-<!-- </div> -->
+<div [@featuredAnimation]="o.isActivated ? o.activatedRoute : ''">
+  <router-outlet #o="outlet"></router-outlet>
+</div>
 <sub-header sectionTitle="Also This Season"></sub-header>
 <other-shows></other-shows>
 <sub-header sectionTitle="About Farmers Alley Theatre"></sub-header>
