@@ -24,6 +24,18 @@
     &:hover {
       background-color: var(--lt-green);
     }
+
+    &.is-active {
+      &:hover {
+        background-color: transparent;
+        cursor: default;
+      }
+
+      img {
+        opacity: 1;
+        transform: scale(1.25, 1.25);
+      }
+    }
   }
 
   &:hover {
@@ -46,6 +58,7 @@
     max-height: 200px;
     opacity: .25;
     transition: transform 0.2s ease-out;
+    // transition: opacity 0.2s ease-out;
 
   }
 }
