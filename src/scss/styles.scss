@@ -1,6 +1,12 @@
 @import "./variables";
 @import './typography';
 
+/deep/ router-outlet~* {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   padding-top: 80px;
   max-width: 1600px;
