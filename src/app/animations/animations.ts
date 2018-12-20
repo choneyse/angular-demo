@@ -48,7 +48,7 @@ export const featuredAnimation = trigger('featuredAnimation', [
           optional: true
         }
       ),
-      query(':leave .animate-left', stagger(200, [animate('0.5s', style({ transform: 'translateX(-200%)' }))]), {
+      query(':leave .exit-left', stagger(200, [animate('0.5s', style({ transform: 'translateX(-200%)' }))]), {
         optional: true
       }),
       // Featured Enter

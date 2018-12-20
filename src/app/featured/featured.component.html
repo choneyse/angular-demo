@@ -1,12 +1,14 @@
 <section class="featured">
   <div class="left">
-    <div class="animate-left">
+    <div class="exit-left">
       <h2>{{ show.title }}</h2>
       <h3>{{ show.titleSecond }}</h3>
     </div>
-    <p class="description animate-left" [innerHTML]="show.description"></p>
-    <date [startDate]="show.startDate" [endDate]="show.endDate"></date>
-    <fat-button class="animate-left" buttonText='Purchase Tickets' buttonHref="//www.google.com"></fat-button>
+    <p class="description exit-left" [innerHTML]="show.description"></p>
+    <div class="exit-left">
+      <date [startDate]="show.startDate" [endDate]="show.endDate"></date>
+      <fat-button class="exit-left" buttonText='Purchase Tickets' buttonHref="//www.google.com"></fat-button>
+    </div>
   </div>
   <div class="right">
     <img class="poster" src="{{ show.poster }}" />
