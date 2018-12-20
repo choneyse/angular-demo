@@ -1,11 +1,7 @@
 <div class="join-mailing-list">
-  <form [formGroup]="form"
-  (ngSubmit)="onSubmit(form.value)">
-  <label for="email">E-Mail</label>
-  <input type="email" name="email" id="email" formControlName="email" email="true">
-  <div *ngIf="form.get('email').hasError('pattern')" class="error">
-    Invalid Email Address
-  </div>
-  <button type="submit" [disabled]="!form.valid">Subscribe</button>
-</form>
+  <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+    <label for="email"></label>
+    <input type="email" placeholder="E-Mail Address" name="email" id="email" formControlName="email" email="true">
+    <button type="submit" [disabled]="!form.valid">Subscribe</button>
+  </form>
 </div>
