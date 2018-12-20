@@ -1,6 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { FeaturedComponent } from './featured/featured.component';
@@ -14,6 +15,7 @@ import { RouterModule } from '@angular/router';
 import { BeyondTheRainbowComponent } from './shows/beyond-the-rainbow/beyond-the-rainbow.component';
 import { ADollsHouseComponent } from './shows/a-dolls-house/a-dolls-house.component';
 import { MarvelousWonderettesComponent } from './shows/marvelous-wonderettes/marvelous-wonderettes.component';
+import { JoinMailingListComponent } from './join-mailing-list/join-mailing-list.component';
 
 @NgModule({
   declarations: [
@@ -26,9 +28,10 @@ import { MarvelousWonderettesComponent } from './shows/marvelous-wonderettes/mar
     OtherShowsComponent,
     BeyondTheRainbowComponent,
     ADollsHouseComponent,
-    MarvelousWonderettesComponent
+    MarvelousWonderettesComponent,
+    JoinMailingListComponent
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, RouterModule.forRoot(appRoutes, { onSameUrlNavigation: 'reload' })],
+  imports: [BrowserModule, BrowserAnimationsModule, ReactiveFormsModule, RouterModule.forRoot(appRoutes)],
   providers: [],
   bootstrap: [AppComponent]
 })
