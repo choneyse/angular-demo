@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Validators, FormBuilder } from "@angular/forms";
+import { Validators, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'join-mailing-list',
@@ -9,23 +9,15 @@ import { Validators, FormBuilder } from "@angular/forms";
 export class JoinMailingListComponent implements OnInit {
   form;
 
-  constructor(
-    private formBuilder: FormBuilder,
-  ) {}
+  constructor(private formBuilder: FormBuilder) {}
 
-  ngOnInit() { 
+  ngOnInit() {
     this.form = this.formBuilder.group({
-    email: this.formBuilder.control(
-      "",
-      Validators.compose([
-        Validators.required,
-        Validators.email
-      ])
-    )
-  })}
+      email: this.formBuilder.control('', Validators.compose([Validators.required, Validators.email]))
+    });
+  }
 
   onSubmit(formData) {
-    console.log(email);
     alert(`Thanks for subscribing: ${formData.email}`);
   }
 }
