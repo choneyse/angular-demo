@@ -7,19 +7,45 @@
 }
 
 .show {
-  padding: 24px;
   flex: 1;
-  border-right: 1px solid var(--dk-gray);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+
+  a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    border-right: 1px solid var(--dk-gray);
+
+    &:hover {
+      background-color: var(--lt-green);
+    }
+
+    &.is-active {
+      &:hover {
+        background-color: transparent;
+        cursor: default;
+      }
+
+      img {
+        opacity: 1;
+        transform: scale(1.25, 1.25);
+      }
+    }
+  }
 
   &:hover {
-    background-color: var(--lt-green);
-    cursor: pointer;
+
 
     img {
       opacity: 1;
+      // max-height: 225px;
+      // max-width: 225px;
+      transform: scale(1.1, 1.1);
     }
   }
 
@@ -31,12 +57,8 @@
     max-width: 200px;
     max-height: 200px;
     opacity: .25;
-    transition: max-height 0.5s linear;
-    transition: max-width 0.5s linear;
+    transition: transform 0.2s ease-out;
+    // transition: opacity 0.2s ease-out;
 
-    &:hover {
-      max-height: 300px;
-      max-width: 300px;
-    }
   }
 }

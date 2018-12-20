@@ -22,9 +22,7 @@ const getShowId = titleFromUrl => {
   animations: [fromLeft, fromRight]
 })
 export class FeaturedComponent implements OnInit {
-  constructor(private showsService: ShowsService, private activatedRoute: ActivatedRoute) {
-    console.log('Featured Component Constructor');
-  }
+  constructor(private showsService: ShowsService, private activatedRoute: ActivatedRoute) {}
   show;
   @Input() showId;
   ngOnInit() {
