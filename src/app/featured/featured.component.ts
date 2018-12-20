@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { ShowsService } from '../shows.service';
+import { fadeAnimation } from '../animations';
 
 const getShowId = titleFromUrl => {
   switch (titleFromUrl) {
@@ -17,10 +18,13 @@ const getShowId = titleFromUrl => {
 @Component({
   selector: 'featured',
   templateUrl: './featured.component.html',
-  styleUrls: ['./featured.component.scss']
+  styleUrls: ['./featured.component.scss'],
+  animations: [fadeAnimation]
 })
 export class FeaturedComponent implements OnInit {
-  constructor(private showsService: ShowsService, private activatedRoute: ActivatedRoute) {}
+  constructor(private showsService: ShowsService, private activatedRoute: ActivatedRoute) {
+    console.log('Featured Component Constructor');
+  }
   @Input() show;
   ngOnInit() {
     this.activatedRoute.params.subscribe(params => {

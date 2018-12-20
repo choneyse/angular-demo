@@ -8,4 +8,4 @@ const appRoutes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'beyond-the-rainbow' }
 ];
 
-export const routing = RouterModule.forRoot(appRoutes);
+export const routing = RouterModule.forRoot(appRoutes, { onSameUrlNavigation: 'reload' });

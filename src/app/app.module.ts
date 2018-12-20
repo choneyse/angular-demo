@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { FeaturedComponent } from './featured/featured.component';
@@ -20,7 +21,7 @@ import { routing } from './app.routing';
     ButtonComponent,
     OtherShowsComponent
   ],
-  imports: [BrowserModule, routing],
+  imports: [BrowserModule, BrowserAnimationsModule, routing],
   providers: [],
   bootstrap: [AppComponent]
 })

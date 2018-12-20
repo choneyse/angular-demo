@@ -2,7 +2,9 @@
 
 <sub-header sectionTitle="Featured"></sub-header>
 <!-- Featured Component -->
-<router-outlet></router-outlet>
+<div [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+  <router-outlet #o="outlet"></router-outlet>
+</div>
 <sub-header sectionTitle="Also This Season"></sub-header>
 <other-shows></other-shows>
 <sub-header sectionTitle="About Farmers Alley Theatre"></sub-header>
