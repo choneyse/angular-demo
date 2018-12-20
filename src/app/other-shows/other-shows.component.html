@@ -1,9 +1,9 @@
 <div class="other-shows">
   <div class="show" *ngFor="let show of shows">
-    <div class="show-logo">
-      <a routerLink="{{ show.url }}" routerLinkActive="is-active">
+    <a routerLink="{{ show.url }}" routerLinkActive="is-active">
+      <div class="show-logo">
         <img src="{{ show.logo }}" alt="{{ show.title }}" />
-      </a>
-    </div>
+      </div>
+    </a>
   </div>
 </div>

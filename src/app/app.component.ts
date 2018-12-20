@@ -14,7 +14,7 @@ export class AppComponent {
     let scrollToTop = window.setInterval(() => {
       let pos = window.pageYOffset;
       if (pos > 0) {
-        window.scrollTo(0, pos - 100);
+        window.scrollTo(0, pos - 25);
       } else {
         window.clearInterval(scrollToTop);
       }
