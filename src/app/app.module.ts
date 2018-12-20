@@ -9,7 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { SubHeaderComponent } from './sub-header/sub-header.component';
 import { ButtonComponent } from './button/button.component';
 import { OtherShowsComponent } from './other-shows/other-shows.component';
-import { routing } from './app.routing';
+import { appRoutes } from './app.routing';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { routing } from './app.routing';
     ButtonComponent,
     OtherShowsComponent
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, routing],
+  imports: [BrowserModule, BrowserAnimationsModule, RouterModule.forRoot(appRoutes, { onSameUrlNavigation: 'reload' })],
   providers: [],
   bootstrap: [AppComponent]
 })

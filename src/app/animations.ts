@@ -2,7 +2,7 @@ import { trigger, animate, transition, style, query } from '@angular/animations'
 
 export const fadeAnimation = trigger('fadeAnimation', [
   // The '* => *' will trigger the animation to change between any two states
-  transition('* => *', [
+  transition('* <=> *', [
     // The query function has three params.
     // First is the event, so this will apply on entering or when the element is added to the DOM.
     // Second is a list of styles or animations to apply.
