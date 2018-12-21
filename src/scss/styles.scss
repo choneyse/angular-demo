@@ -12,3 +12,34 @@ body {
   max-width: 1600px;
   margin: 0 auto;
 }
+
+a.btn,
+button.btn {
+  background-color: var(--dk-green);
+  border: 1px solid var(--dk-gray);
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--header-type);
+  letter-spacing: 5px;
+  padding: 20px;
+  cursor: pointer;
+  display: inline-block;
+  transition: var(--global-transition);
+
+  &:hover {
+    transform: var(--global-scale-up);
+    background-color: var(--lt-green);
+  }
+
+  &:disabled {
+    opacity: .25;
+    background-color: var(--lt-gray);
+    border-color: var(--gray);
+    cursor: not-allowed;
+    transform: none;
+
+  }
+
+
+}

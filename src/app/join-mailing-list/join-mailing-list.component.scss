@@ -1,5 +1,26 @@
 .join-mailing-list {
   width: 100%;
   background-color: var(--dk-gray);
-  padding: 48px;
+  padding: 48px 24px 24px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+}
+
+.left {
+  text-align: right;
+}
+
+h3 {
+  color: var(--white);
+}
+
+input {
+  font-size: 1.6em;
+  font-family: Varela, sans-serif;
+  line-height: 3rem;
+  font-weight: 400;
+  font-style: normal;
+  width: 25%;
+  margin-right: 24px;
 }

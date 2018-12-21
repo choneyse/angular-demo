@@ -45,7 +45,7 @@
       opacity: 1;
       // max-height: 225px;
       // max-width: 225px;
-      transform: scale(1.1, 1.1);
+      transform: var(--global-scale-up);
     }
   }
 
@@ -57,7 +57,7 @@
     max-width: 200px;
     max-height: 200px;
     opacity: .25;
-    transition: transform 0.2s ease-out;
+    transition: var(--global-transition);
     // transition: opacity 0.2s ease-out;
 
   }

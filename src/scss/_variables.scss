@@ -13,6 +13,9 @@
   --body-type: Varela, sans-serif;
 
   --drop-shadow: 5px 10px 24px $lt-gray;
+
+  --global-transition: all 0.2s ease-out;
+  --global-scale-up: scale(1.1, 1.1);
 }
 
 $dk-green: #61892F;
@@ -25,7 +28,9 @@ $white: #ffffff;
 $header-color: $dk-gray;
 $body-color: $lt-gray;
 
-$header-type: Montserrat, sans-serif;
-$body-type: Varela, sans-serif;
+$header-type: Montserrat,
+sans-serif;
+$body-type: Varela,
+sans-serif;
 
 $drop-shadow: 5px 10px 24px $lt-gray;

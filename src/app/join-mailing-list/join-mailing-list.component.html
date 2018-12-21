@@ -1,7 +1,14 @@
 <div class="join-mailing-list">
-  <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
-    <label for="email"></label>
-    <input type="email" placeholder="E-Mail Address" name="email" id="email" formControlName="email" email="true">
-    <button type="submit" [disabled]="!form.valid">Subscribe</button>
-  </form>
+  <div class="left">
+    <h3>Sign up for updates!</h3>
+    <p>Get news from Farmers Alley Theatre in your inbox.</p>
+  </div>
+  <div class="right">
+    <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+      <label for="email"></label>
+      <input type="email" placeholder="E-Mail" name="email" id="email" formControlName="email" email="true">
+      <button class="btn" type="submit" [disabled]="!form.valid">Subscribe</button>
+    </form>
+  </div>
+
 </div>
