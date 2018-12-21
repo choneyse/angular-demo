@@ -29,17 +29,3 @@ export class FeaturedComponent implements OnInit {
     this.show = this.showsService.getShow(this.showId);
   }
 }
-// export class FeaturedComponent implements OnInit {
-//   constructor(private showsService: ShowsService, private activatedRoute: ActivatedRoute) {}
-//   @Input() show;
-//   ngOnInit() {
-//     this.activatedRoute.params.subscribe(params => {
-//       if (!params['show']) {
-//         this.show = this.showsService.getShow(0);
-//       } else {
-//         const showId = getShowId(params['show']);
-//         this.show = this.showsService.getShow(showId);
-//       }
-//     });
-//   }
-// }
