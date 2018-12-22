@@ -18,14 +18,16 @@
   --global-scale-up: scale(1.1, 1.1);
 
   --offset: -72px;
-
-  --sm-min: 320px;
-  --sm-max: 600px;
-  --md-min: 601px;
-  --md-max: 991px;
-  --lg-min: 992px;
-  --lg-max: 1600px;
 }
+
+$sm-min: 320px;
+$sm-max: 600px;
+
+$md-min: 601px;
+$md-max: 991px;
+
+$lg-min: 992px;
+$lg-max: 1600px;
 
 $dk-green: #61892f;
 $lt-green: #86c232;
