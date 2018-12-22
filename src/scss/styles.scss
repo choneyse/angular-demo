@@ -1,6 +1,7 @@
 @import './variables';
 @import './typography';
 @import './poster';
+@import './basic-content';
 
 /deep/ router-outlet ~ * {
   position: absolute;
