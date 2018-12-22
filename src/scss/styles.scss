@@ -1,7 +1,8 @@
-@import "./variables";
+@import './variables';
 @import './typography';
+@import './poster';
 
-/deep/ router-outlet~* {
+/deep/ router-outlet ~ * {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -33,13 +34,10 @@ button.btn {
   }
 
   &:disabled {
-    opacity: .25;
+    opacity: 0.25;
     background-color: var(--lt-gray);
     border-color: var(--gray);
     cursor: not-allowed;
     transform: none;
-
   }
-
-
 }
