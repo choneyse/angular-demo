@@ -1,0 +1,20 @@
+footer {
+  background-color: var(--dk-gray);
+  text-align: center;
+  width: 100%;
+  padding: 12px 0;
+  border-top: 1px solid var(--white);
+  p {
+    color: var(--lt-gray);
+    margin-bottom: 0;
+  }
+  .keep {
+    // white-space: nowrap;
+    padding: 0 12px;
+    border-right: 1px solid var(--dk-green);
+    display: inline-block;
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
