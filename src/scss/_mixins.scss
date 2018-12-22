@@ -1,26 +1,26 @@
 @mixin media-query($media-query) {
   @if $media-query == small {
-    @media only screen and (max-width: $sm-max) {
+    @media only screen and (max-width: var(--sm-max)) {
       @content;
     }
   }
   @if $media-query == medium {
-    @media only screen and (min-width: $md-min) and (max-width: $md-max) {
+    @media only screen and (min-width: var(--md-min)) and (max-width: var(--md-max)) {
       @content;
     }
   }
   @if $media-query == medium-and-up {
-    @media only screen and (min-width: $md-min) {
+    @media only screen and (min-width: var(--md-min)) {
       @content;
     }
   }
   @if $media-query == medium-and-down {
-    @media only screen and (max-width: $md-max) {
+    @media only screen and (max-width: var(--md-max)) {
       @content;
     }
   }
   @if $media-query == large {
-    @media only screen and (min-width: $lg-min) {
+    @media only screen and (min-width: var(--lg-min)) {
       @content;
     }
   }
