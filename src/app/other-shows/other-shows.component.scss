@@ -11,6 +11,11 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  &:last-child {
+    a {
+      border-right: none;
+    }
+  }
 
   a {
     display: flex;
@@ -39,8 +44,6 @@
   }
 
   &:hover {
-
-
     img {
       opacity: 1;
       // max-height: 225px;
@@ -56,9 +59,8 @@
   img {
     max-width: 200px;
     max-height: 200px;
-    opacity: .25;
+    opacity: 0.25;
     transition: var(--global-transition);
     // transition: opacity 0.2s ease-out;
-
   }
 }
