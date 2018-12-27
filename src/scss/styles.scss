@@ -18,9 +18,6 @@ body {
   margin: 0 auto;
   max-width: $lg-max;
   position: relative;
-  @include media-query(medium-and-down) {
-    padding-top: 60px;
-  }
 }
 
 a.btn,
