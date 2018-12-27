@@ -16,5 +16,9 @@ footer {
     &:last-child {
       border-right: none;
     }
+    @include media-query(medium-and-down) {
+      border: none;
+      display: block;
+    }
   }
 }
