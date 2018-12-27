@@ -31,7 +31,7 @@ header {
   @include media-query(medium-and-down) {
     padding: 10px 50px;
     // max-width: 50vw;
-    max-height: 41px;
+    // max-height: 41px;
   }
 }
 
@@ -58,7 +58,7 @@ nav {
       display: block;
       border-top: 1px solid var(--dk-gray);
       &:last-child {
-        border-bottom: 1px solid var (--dk-gray);
+        border-bottom: 1px solid var(--dk-gray);
       }
       &:hover {
         &:not(.is-active) {
