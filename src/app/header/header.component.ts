@@ -26,7 +26,9 @@ export class HeaderComponent implements OnInit {
   }
 
   public toggleMobileNav() {
-    const nav = document.getElementsByTagName('nav')[0];
+    const nav = document.querySelector('nav');
+    const hamburger = document.querySelector('.menu-toggle');
     nav.classList.toggle('open');
+    hamburger.classList.toggle('open');
   }
 }
