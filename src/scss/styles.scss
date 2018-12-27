@@ -3,6 +3,7 @@
 @import './poster';
 @import './basic-content';
 @import './footer';
+@import './mixins';
 
 /deep/ router-outlet ~ * {
   position: absolute;
@@ -12,8 +13,14 @@
 
 body {
   padding-top: 80px;
-  max-width: 1600px;
+  min-width: $sm-min;
+  width: auto;
   margin: 0 auto;
+  max-width: $lg-max;
+  position: relative;
+  @include media-query(medium-and-down) {
+    padding-top: 40px;
+  }
 }
 
 a.btn,

@@ -22,5 +22,11 @@ export class HeaderComponent implements OnInit {
       top: element.offsetTop - 80,
       behavior: 'smooth'
     });
+    this.toggleMobileNav();
+  }
+
+  public toggleMobileNav() {
+    const nav = document.getElementsByTagName('nav')[0];
+    nav.classList.toggle('open');
   }
 }

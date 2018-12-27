@@ -27,3 +27,9 @@
     }
   }
 }
+
+@mixin hide-at($media-query) {
+  @include media-query($media-query) {
+    display: none;
+  }
+}
