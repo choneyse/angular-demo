@@ -19,5 +19,6 @@ export class JoinMailingListComponent implements OnInit {
 
   onSubmit(formData) {
     alert(`Thanks for subscribing: ${formData.email}`);
+    console.log(`Thanks for subscribing: ${formData.email}`);
   }
 }
