@@ -19,7 +19,7 @@ body {
   max-width: $lg-max;
   position: relative;
   @include media-query(medium-and-down) {
-    padding-top: 40px;
+    padding-top: 60px;
   }
 }
 
