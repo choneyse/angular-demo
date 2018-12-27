@@ -18,5 +18,7 @@ export class AppComponent {
         window.clearInterval(scrollToTop);
       }
     }, 16);
+    document.querySelector('nav').classList.remove('open');
+    document.querySelector('.menu-toggle').classList.remove('open');
   }
 }
