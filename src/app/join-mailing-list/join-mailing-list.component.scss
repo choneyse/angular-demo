@@ -1,13 +1,21 @@
+@import '../../scss/mixins';
+
 .join-mailing-list {
   background-color: var(--dk-gray);
   padding: 48px 24px 24px 24px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 24px;
+  @include media-query(medium-and-down) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .left {
   text-align: right;
+  @include media-query(medium-and-down) {
+    text-align: center;
+  }
 }
 
 h3 {
@@ -22,4 +30,14 @@ input {
   font-style: normal;
   width: 25%;
   margin-right: 24px;
+  @include media-query(medium-and-down) {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+@include media-query(medium-and-down) {
+  form {
+    text-align: center;
+  }
 }
