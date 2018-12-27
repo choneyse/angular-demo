@@ -1,7 +1,14 @@
+@import './mixins';
+
 .poster {
   width: 50%;
   position: relative;
   left: var(--offset);
   border: 3px solid white;
   box-shadow: var(--drop-shadow);
+  @include media-query(medium-and-down) {
+    left: 0;
+    margin: 0 auto;
+    display: block;
+  }
 }
