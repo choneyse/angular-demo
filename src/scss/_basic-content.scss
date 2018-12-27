@@ -12,6 +12,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    @include media-query(medium-and-down) {
+      padding: 40px 10px;
+    }
     img {
       border: 3px solid white;
       box-shadow: var(--drop-shadow);
