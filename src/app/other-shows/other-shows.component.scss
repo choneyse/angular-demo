@@ -38,7 +38,7 @@
 
       img {
         opacity: 1;
-        transform: scale(1.25, 1.25);
+        transform: var(--global-scale-up);
       }
     }
   }

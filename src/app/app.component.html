@@ -1,12 +1,12 @@
 <fat-header></fat-header>
-<sub-header sectionTitle="Featured"></sub-header>
+<sub-header id="featured" sectionTitle="Featured"></sub-header>
 <!-- Featured Component -->
 <div [@featuredAnimation]="o.isActivated ? o.activatedRoute : ''">
   <router-outlet #o="outlet" (activate)="onActivate($event)"></router-outlet>
 </div>
-<sub-header sectionTitle="Also This Season"></sub-header>
+<sub-header id="other-shows" sectionTitle="Also This Season"></sub-header>
 <other-shows></other-shows>
-<section class="about">
+<section id="about" class="about">
   <sub-header sectionTitle="Welcome to Season 11"></sub-header>
   <div class="content">
     <div class="left"><img src="../assets/farmersalleymarquee.jpg" alt="Farmers Alley Theatre Marquee" /></div>
@@ -32,7 +32,7 @@
     </div>
   </div>
 </section>
-<sub-header sectionTitle="Join Our Mailing List"></sub-header>
+<sub-header id="subscribe" sectionTitle="Join Our Mailing List"></sub-header>
 <join-mailing-list></join-mailing-list>
 <footer>
   <p>
