@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ShowsService } from '../shows.service';
 
 @Component({
-  selector: 'other-shows',
+  selector: 'app-other-shows',
   templateUrl: './other-shows.component.html',
   styleUrls: ['./other-shows.component.scss']
 })

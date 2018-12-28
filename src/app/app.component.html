@@ -1,13 +1,13 @@
-<fat-header></fat-header>
-<sub-header id="featured" sectionTitle="Featured"></sub-header>
+<app-fat-header></app-fat-header>
+<app-sub-header id="featured" sectionTitle="Featured"></app-sub-header>
 <!-- Featured Component -->
 <div [@featuredAnimation]="o.isActivated ? o.activatedRoute : ''">
   <router-outlet #o="outlet" (activate)="onActivate($event)"></router-outlet>
 </div>
-<sub-header id="other-shows" sectionTitle="Also This Season"></sub-header>
-<other-shows></other-shows>
+<app-sub-header id="other-shows" sectionTitle="Also This Season"></app-sub-header>
+<app-other-shows></app-other-shows>
 <section id="about" class="about">
-  <sub-header sectionTitle="About"></sub-header>
+  <app-sub-header sectionTitle="About"></app-sub-header>
   <div class="content">
     <div class="left"><img src="../assets/farmersalleymarquee.jpg" alt="Farmers Alley Theatre Marquee" /></div>
     <div class="right">
@@ -32,6 +32,6 @@
     </div>
   </div>
 </section>
-<sub-header id="subscribe" sectionTitle="Subscribe"></sub-header>
-<join-mailing-list></join-mailing-list>
+<app-sub-header id="subscribe" sectionTitle="Subscribe"></app-sub-header>
+<app-join-mailing-list></app-join-mailing-list>
 <app-footer></app-footer>
