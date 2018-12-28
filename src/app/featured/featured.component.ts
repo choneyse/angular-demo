@@ -16,7 +16,7 @@ const getShowId = titleFromUrl => {
 };
 
 @Component({
-  selector: 'featured',
+  selector: 'app-featured',
   templateUrl: './featured.component.html',
   styleUrls: ['./featured.component.scss'],
   animations: [fromLeft, fromRight]

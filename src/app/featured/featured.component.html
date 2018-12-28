@@ -6,11 +6,9 @@
     </div>
     <p class="description exit-left" [innerHTML]="show.description"></p>
     <div class="exit-left">
-      <date [startDate]="show.startDate" [endDate]="show.endDate"></date>
-      <fat-button class="exit-left" buttonText='Purchase Tickets' buttonHref="#"></fat-button>
+      <app-date [startDate]="show.startDate" [endDate]="show.endDate"></app-date>
+      <app-fat-button class="exit-left" buttonText="Purchase Tickets" buttonHref="#"></app-fat-button>
     </div>
   </div>
-  <div class="right">
-    <img class="poster" src="{{ show.poster }}" />
-  </div>
+  <div class="right"><img class="poster" src="{{ show.poster }}" /></div>
 </section>

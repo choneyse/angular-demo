@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Validators, FormBuilder } from '@angular/forms';
 
 @Component({
-  selector: 'join-mailing-list',
+  selector: 'app-join-mailing-list',
   templateUrl: './join-mailing-list.component.html',
   styleUrls: ['./join-mailing-list.component.scss']
 })
