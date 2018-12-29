@@ -8,7 +8,7 @@ import { featuredAnimation } from './animations/animations';
   animations: [featuredAnimation]
 })
 export class AppComponent {
-  title = 'fat-angular';
+  title = 'Farmers Alley Theatre';
   onActivate(event: any) {
     const scrollToTop = window.setInterval(() => {
       const pos = window.pageYOffset;
