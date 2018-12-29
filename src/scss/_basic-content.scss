@@ -20,6 +20,7 @@
       box-shadow: var(--drop-shadow);
       position: relative;
       right: var(--offset);
+      width: 100%;
       @include media-query(medium-and-down) {
         right: 0;
         margin: 0 auto;
