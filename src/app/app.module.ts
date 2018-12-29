@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReactiveFormsModule } from "@angular/forms";
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { FeaturedComponent } from './featured/featured.component';
@@ -16,6 +16,7 @@ import { BeyondTheRainbowComponent } from './shows/beyond-the-rainbow/beyond-the
 import { ADollsHouseComponent } from './shows/a-dolls-house/a-dolls-house.component';
 import { MarvelousWonderettesComponent } from './shows/marvelous-wonderettes/marvelous-wonderettes.component';
 import { JoinMailingListComponent } from './join-mailing-list/join-mailing-list.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { JoinMailingListComponent } from './join-mailing-list/join-mailing-list.
     BeyondTheRainbowComponent,
     ADollsHouseComponent,
     MarvelousWonderettesComponent,
-    JoinMailingListComponent
+    JoinMailingListComponent,
+    FooterComponent
   ],
   imports: [BrowserModule, BrowserAnimationsModule, ReactiveFormsModule, RouterModule.forRoot(appRoutes)],
   providers: [],

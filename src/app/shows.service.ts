@@ -4,14 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ShowsService {
-  getAllShows() {
-    return this.shows;
-  }
-
-  getShow(index: number) {
-    return this.shows[index];
-  }
-
   shows = [
     {
       title: 'Beyond the Rainbow',
@@ -47,4 +39,11 @@ export class ShowsService {
       url: 'marvelous-wonderettes-dream-on'
     }
   ];
+  getAllShows() {
+    return this.shows;
+  }
+
+  getShow(index: number) {
+    return this.shows[index];
+  }
 }

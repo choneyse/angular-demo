@@ -1,9 +1,9 @@
 :root {
-  --dk-green: #61892F;
-  --lt-green: #86C232;
+  --dk-green: #61892f;
+  --lt-green: #86c232;
   --dk-gray: #222629;
-  --gray: #474B4f;
-  --lt-gray: #6B6E70;
+  --gray: #474b4f;
+  --lt-gray: #6b6e70;
   --white: #ffffff;
 
   --header-color: $dk-gray;
@@ -12,25 +12,34 @@
   --header-type: Montserrat, sans-serif;
   --body-type: Varela, sans-serif;
 
-  --drop-shadow: 5px 10px 24px $lt-gray;
+  --drop-shadow: 5px 10px 24px var(--dk-gray);
 
   --global-transition: all 0.2s ease-out;
   --global-scale-up: scale(1.1, 1.1);
+
+  --offset: -72px;
 }
 
-$dk-green: #61892F;
-$lt-green: #86C232;
+$sm-min: 320px;
+$sm-max: 600px;
+
+$md-min: 601px;
+$md-max: 840px;
+
+$lg-min: 841px;
+$lg-max: 1600px;
+
+$dk-green: #61892f;
+$lt-green: #86c232;
 $dk-gray: #222629;
-$gray: #474B4f;
-$lt-gray: #6B6E70;
+$gray: #474b4f;
+$lt-gray: #6b6e70;
 $white: #ffffff;
 
 $header-color: $dk-gray;
 $body-color: $lt-gray;
 
-$header-type: Montserrat,
-sans-serif;
-$body-type: Varela,
-sans-serif;
+$header-type: Montserrat, sans-serif;
+$body-type: Varela, sans-serif;
 
 $drop-shadow: 5px 10px 24px $lt-gray;

@@ -1,16 +1,15 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { text } from '@angular/core/src/render3';
 
 @Component({
-  selector: 'fat-button',
+  selector: 'app-fat-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss']
 })
-export class ButtonComponent implements OnInit {
+export class ButtonComponent {
   constructor() {}
 
-  @Input() buttonHref;
-  @Input() buttonText;
+  @Input() buttonHref: string;
+  @Input() buttonText: string;
 
   ngOnInit() {}
 }

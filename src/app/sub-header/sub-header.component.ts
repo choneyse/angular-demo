@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'sub-header',
+  selector: 'app-sub-header',
   templateUrl: './sub-header.component.html',
   styleUrls: ['./sub-header.component.scss']
 })
 export class SubHeaderComponent implements OnInit {
-  @Input() sectionTitle;
+  @Input() sectionTitle: string;
   ngOnInit() {}
 }

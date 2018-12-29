@@ -8,15 +8,17 @@ import { featuredAnimation } from './animations/animations';
   animations: [featuredAnimation]
 })
 export class AppComponent {
-  title = 'fat-angular';
+  title = 'Farmers Alley Theatre';
   onActivate(event: any) {
-    let scrollToTop = window.setInterval(() => {
-      let pos = window.pageYOffset;
+    const scrollToTop = window.setInterval(() => {
+      const pos = window.pageYOffset;
       if (pos > 0) {
-        // window.scrollTo(0, pos - 25);
+        window.scrollTo(0, pos - 25);
       } else {
         window.clearInterval(scrollToTop);
       }
     }, 16);
+    document.querySelector('nav').classList.remove('open');
+    document.querySelector('.menu-toggle').classList.remove('open');
   }
 }

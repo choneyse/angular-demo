@@ -1,9 +1,15 @@
+@import '../../scss/mixins';
+
 .other-shows {
   display: flex;
   text-align: center;
   align-items: stretch;
   justify-content: center;
   padding: 48px 0;
+  @include media-query(medium-and-down) {
+    display: block;
+    padding: 0;
+  }
 }
 
 .show {
@@ -11,6 +17,12 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  &:last-child {
+    a {
+      border-right: none;
+      border-bottom: none;
+    }
+  }
 
   a {
     display: flex;
@@ -20,11 +32,14 @@
     align-items: center;
     padding: 24px;
     border-right: 1px solid var(--dk-gray);
-
+    @include media-query(medium-and-down) {
+      margin: 0 12px;
+      border-right: none;
+      border-bottom: 1px solid var(--dk-gray);
+    }
     &:hover {
       background-color: var(--lt-green);
     }
-
     &.is-active {
       &:hover {
         background-color: transparent;
@@ -33,14 +48,12 @@
 
       img {
         opacity: 1;
-        transform: scale(1.25, 1.25);
+        transform: var(--global-scale-up);
       }
     }
   }
 
   &:hover {
-
-
     img {
       opacity: 1;
       // max-height: 225px;
@@ -56,9 +69,11 @@
   img {
     max-width: 200px;
     max-height: 200px;
-    opacity: .25;
+    opacity: 0.25;
     transition: var(--global-transition);
+    @include media-query(medium-and-down) {
+      opacity: 1;
+    }
     // transition: opacity 0.2s ease-out;
-
   }
 }
