@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ShowsService } from '../../shows.service';
 
 @Component({
-  selector: 'a-dolls-house',
+  selector: 'app-a-dolls-house',
   templateUrl: './a-dolls-house.component.html',
   styleUrls: ['./a-dolls-house.component.scss']
 })
