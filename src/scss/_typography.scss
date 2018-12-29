@@ -1,3 +1,5 @@
+@import './mixins';
+
 html,
 body {
   font-size: 10px;
@@ -11,6 +13,9 @@ h1 {
   font-weight: 900;
   font-style: normal;
   letter-spacing: 0em;
+  @include media-query(small) {
+    font-size: 4.57763671875em;
+  }
 }
 
 h2 {
@@ -21,6 +26,9 @@ h2 {
   font-weight: 600;
   font-style: normal;
   letter-spacing: 0em;
+  @include media-query(small) {
+    font-size: 3.662109375em;
+  }
 }
 
 h3 {
@@ -32,6 +40,9 @@ h3 {
   font-weight: 600;
   font-style: normal;
   letter-spacing: 0em;
+  @include media-query(small) {
+    font-size: 2.9296875em;
+  }
 }
 
 h4 {

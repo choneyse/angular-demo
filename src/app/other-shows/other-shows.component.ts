@@ -9,7 +9,7 @@ import { ShowsService } from '../shows.service';
 })
 export class OtherShowsComponent implements OnInit {
   constructor(private showsService: ShowsService) {}
-  @Input() shows;
+  @Input() shows: object;
 
   ngOnInit() {
     this.shows = this.showsService.getAllShows();
