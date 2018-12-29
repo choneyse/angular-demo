@@ -30,9 +30,11 @@ input {
   font-style: normal;
   width: 25%;
   margin-right: 24px;
+
   @include media-query(medium-and-down) {
     width: 100%;
     margin-bottom: 12px;
+    margin-right: 0;
   }
 }
 
