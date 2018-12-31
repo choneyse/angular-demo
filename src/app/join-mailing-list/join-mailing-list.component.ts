@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Validators, FormBuilder } from '@angular/forms';
+import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-join-mailing-list',
@@ -7,7 +7,7 @@ import { Validators, FormBuilder } from '@angular/forms';
   styleUrls: ['./join-mailing-list.component.scss']
 })
 export class JoinMailingListComponent implements OnInit {
-  form;
+  form: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {}
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { ShowsService } from '../../shows.service';
 
@@ -7,10 +7,7 @@ import { ShowsService } from '../../shows.service';
   templateUrl: './a-dolls-house.component.html',
   styleUrls: ['./a-dolls-house.component.scss']
 })
-export class ADollsHouseComponent implements OnInit {
+export class ADollsHouseComponent {
   constructor(private showsService: ShowsService) {}
   @Input() show: object;
-  ngOnInit() {
-    this.show = this.showsService.getShow(1);
-  }
 }
