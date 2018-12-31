@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ShowsService } from '../../shows.service';
 
 @Component({
@@ -6,12 +6,8 @@ import { ShowsService } from '../../shows.service';
   templateUrl: './marvelous-wonderettes.component.html',
   styleUrls: ['./marvelous-wonderettes.component.scss']
 })
-export class MarvelousWonderettesComponent implements OnInit {
+export class MarvelousWonderettesComponent {
   constructor(private showsService: ShowsService) {}
 
   @Input() show: object;
-
-  ngOnInit() {
-    this.show = this.showsService.getShow(2);
-  }
 }

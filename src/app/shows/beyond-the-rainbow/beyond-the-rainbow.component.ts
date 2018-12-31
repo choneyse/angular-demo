@@ -7,10 +7,7 @@ import { ShowsService } from '../../shows.service';
   templateUrl: './beyond-the-rainbow.component.html',
   styleUrls: ['./beyond-the-rainbow.component.scss']
 })
-export class BeyondTheRainbowComponent implements OnInit {
+export class BeyondTheRainbowComponent {
   constructor(private showsService: ShowsService) {}
   @Input() show: object;
-  ngOnInit() {
-    // this.show = this.showsService.getShow(0);
-  }
 }
